@@ -6,13 +6,13 @@ const itemWeights = {
   Deadlift: [],
   "Squat Clean": [],
   "Power Clean": [],
-  "Clean & Jerk ": [],
-  "Shoulder Press ": [],
+  "Clean & Jerk": [],
+  "Shoulder Press": [],
   "Push Press": [],
-  "Push Jerk ": [],
+  "Push Jerk": [],
   "Split Jerk": [],
-  "Power Snatch ": [],
-  "Squat Snatch ": [],
+  "Power Snatch": [],
+  "Squat Snatch": [],
   "Over Head Squat": [],
 };
 
