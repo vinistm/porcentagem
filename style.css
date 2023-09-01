@@ -1,3 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+html {
+  background-color: black !important;
+  color: white !important;
+}
 ul {
   list-style-type: none;
   padding: 0;
@@ -25,7 +30,6 @@ li {
 
 .modal-content {
   display: flex;
-  background-color: white;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -33,6 +37,21 @@ li {
   border-radius: 18px;
   flex-direction: column;
   align-items: center;
+  color: black !important;
+  background: rgb(247, 247, 247);
+  box-shadow: rgba(24, 212, 17, 0.4) 0px 0px 0px 2px,
+    rgba(0, 252, 13, 0.65) 0px 4px 6px -1px,
+    rgba(3, 223, 51, 0.08) 0px 1px 0px inset;
+}
+.modal-content > span {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 50%;
 }
 
 .close {
@@ -59,22 +78,57 @@ body {
   width: 70vw;
   row-gap: 8px;
 }
+h3 {
+  font-family: "Oswald", sans-serif;
+}
 #item-list > ul > li {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
   width: 60vw;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 4vh;
-  border-radius: 10px;
+  border-radius: 16px 16px 16px 0px;
+  background: rgb(247, 247, 247);
+  color: black !important;
 }
 #modal-percentage-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
 }
 #modal-percentage-list > li {
-  width: 25vw;
+  width: 30vw;
+  height: 25px;
+  box-shadow: rgba(41, 41, 41, 0.4) 1px 1px 2px 1px;
+  text-align: center;
+  border-radius: 8px;
+  border: 0 none;
+  outline: 0;
 }
 .input-button {
   display: flex;
+  width: 60vw;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  border: 0 none;
+  outline: 0;
+}
+.input-button > input {
+  width: 30vw;
+  border: 0 none;
+  outline: 0;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.input-button > button {
+  width: 20vw;
+  height: 4vh;
+  box-shadow: rgba(41, 41, 41, 0.4) 1px 1px 2px 1px;
+  border-radius: 8px;
+  border: 0;
 }
