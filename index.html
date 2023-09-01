@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Porcentagens</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Porcentagem</h1>
+
+    <div id="item-list">
+      <ul>
+        <li onclick="selectItem('Back Squat')">Back Squat</li>
+        <li onclick="selectItem('Front Squat')">Front Squat</li>
+        <li onclick="selectItem('Deadlift')">Deadlift</li>
+        <li onclick="selectItem('Squat Clean')">Squat Clean</li>
+        <li onclick="selectItem('Power Clean')">Power Clean</li>
+        <li onclick="selectItem('Clean & Jerk')">Clean & Jerk</li>
+        <li onclick="selectItem('Shoulder Press')">Shoulder Press</li>
+        <li onclick="selectItem('Push Press')">Push Press</li>
+        <li onclick="selectItem('Push Jerk')">Push Jerk'</li>
+        <li onclick="selectItem('Split Jerk')">Split Jerk</li>
+        <li onclick="selectItem('Power Snatch')">Power Snatch</li>
+        <li onclick="selectItem('Squat Snatch')">Squat Snatch</li>
+        <li onclick="selectItem('Over Head Squat')">O.H.S</li>
+      </ul>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-item-name"></h2>
+        <div class="input-button">
+          <input type="number" id="modal-weight-input" placeholder="Peso" />
+          <button onclick="addWeightModal()">Adicionar Peso</button>
+        </div>
+        <label>Porcentagens:</label>
+        <ul id="modal-percentage-list"></ul>
+        <label>Calcular Porcentagem:</label>
+        <input
+          type="number"
+          id="modal-percentage-input"
+          placeholder="Porcentagem"
+        />
+        <button onclick="calculateModalPercentage()">Calcular</button>
+        <div id="modal-calculated-result"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
