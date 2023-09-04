@@ -132,3 +132,18 @@ h3 {
   border-radius: 8px;
   border: 0;
 }
+#btn-Lpo {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  width: 60vw;
+  display: flex;
+  justify-content: center;
+  height: 4vh;
+  border-radius: 16px 16px 16px 16px;
+  background: rgb(49, 104, 52);
+  color: rgb(255, 255, 255) !important;
+  border: 0;
+}
+h3 {
+  margin: 10px;
+}
