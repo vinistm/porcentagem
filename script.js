@@ -107,3 +107,7 @@ function calculateModalPercentage() {
     )} Lbs`;
   }
 }
+const btnLpo = document.getElementById("btn-Lpo");
+btnLpo.addEventListener("click", () => {
+  window.location.href = "Lpo.html";
+});
