@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 html {
   background-color: black !important;
   color: white !important;
@@ -38,21 +38,21 @@ li {
   flex-direction: column;
   align-items: center;
   color: black !important;
-  background: rgb(247, 247, 247);
-  box-shadow: rgba(24, 212, 17, 0.4) 0px 0px 0px 2px,
-    rgba(0, 252, 13, 0.65) 0px 4px 6px -1px,
-    rgba(3, 223, 51, 0.08) 0px 1px 0px inset;
+  background: rgb(247,247,247);
+  box-shadow: rgba(24, 212, 17, 0.4) 0px 0px 0px 2px, rgba(0, 252, 13, 0.65) 0px 4px 6px -1px, rgba(3, 223, 51, 0.08) 0px 1px 0px inset;
+ 
 }
-.modal-content > span {
+.modal-content>span {
   display: flex;
-  width: 30px;
-  height: 30px;
-  background-color: red;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  border-radius: 50%;
+ width: 30px;
+ height: 30px;
+ background-color: red;
+ align-items: center;
+ justify-content: center;
+ color: white;
+ border-radius: 50%;
 }
+
 
 .close {
   color: #aaa;
@@ -66,7 +66,7 @@ body {
   flex-direction: column;
   align-items: center;
 }
-#item-list {
+#item-list{
   width: 80vw;
   display: flex;
   justify-content: center;
@@ -78,11 +78,11 @@ body {
   width: 70vw;
   row-gap: 8px;
 }
-h3 {
-  font-family: "Oswald", sans-serif;
+h3{
+  font-family: 'Oswald', sans-serif;
 }
-#item-list > ul > li {
-  font-family: "Oswald", sans-serif;
+#item-list > ul > li{
+  font-family: 'Oswald', sans-serif;
   font-size: 18px;
   width: 60vw;
   display: flex;
@@ -90,17 +90,21 @@ h3 {
   align-items: center;
   height: 4vh;
   border-radius: 16px 16px 16px 0px;
-  background: rgb(247, 247, 247);
+  background: rgb(247,247,247);
   color: black !important;
+  
+ 
+  
 }
 #modal-percentage-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: 600;
 }
 #modal-percentage-list > li {
+  display: flex;
   width: 30vw;
   height: 25px;
   box-shadow: rgba(41, 41, 41, 0.4) 1px 1px 2px 1px;
@@ -108,6 +112,7 @@ h3 {
   border-radius: 8px;
   border: 0 none;
   outline: 0;
+  justify-content: space-between;
 }
 .input-button {
   display: flex;
@@ -116,26 +121,31 @@ h3 {
   margin-bottom: 20px;
   border: 0 none;
   outline: 0;
+ 
+  
+ 
 }
-.input-button > input {
+.input-button>input {
   width: 30vw;
   border: 0 none;
-  outline: 0;
-  border-radius: 12px;
+    outline: 0;
+    border-radius: 12px;
   text-align: center;
 }
 
-.input-button > button {
+.input-button>button {
   width: 20vw;
   height: 4vh;
   box-shadow: rgba(41, 41, 41, 0.4) 1px 1px 2px 1px;
   border-radius: 8px;
   border: 0;
+
 }
-#btn-Lpo {
-  font-family: "Oswald", sans-serif;
+
+#btn-Lpo{
+  font-family: 'Oswald', sans-serif;
   font-size: 18px;
-  width: 40vw;
+  width: 60vw;
   display: flex;
   justify-content: center;
   height: 4vh;
@@ -144,156 +154,31 @@ h3 {
   color: rgb(255, 255, 255) !important;
   border: 0;
 }
-h3 {
-  margin: 10px;
+h3{
+  margin:10px;
 }
-@media (min-width: 768px) {
-  html {
-    background-color: black !important;
-    color: white !important;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  li {
-    cursor: pointer;
-    padding: 3px;
-    border: 1px solid #ccc;
-    margin: 3px;
-    display: inline-block;
-    font-size: 14px;
-  }
 
-  /* Estilos do modal */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-  }
+#plate{
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-image: url("./plate.jpg");
+  background-size: cover;
+}
 
-  .modal-content {
-    display: flex;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80vw;
-    border-radius: 18px;
-    flex-direction: column;
-    align-items: center;
-    color: black !important;
-    background: rgb(247, 247, 247);
-    box-shadow: rgba(24, 212, 17, 0.4) 0px 0px 0px 2px,
-      rgba(0, 252, 13, 0.65) 0px 4px 6px -1px,
-      rgba(3, 223, 51, 0.08) 0px 1px 0px inset;
-  }
-  .modal-content > span {
-    display: flex;
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    border-radius: 50%;
-  }
+#platesModal{
+  font-family: 'Oswald', sans-serif;
+}
+#plates-list{
+  display: flex;
+  margin: 0px;
+  height: 20vh;
+  border: none !important;
+  flex-direction: column;
+  justify-content: space-evenly;
 
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #item-list {
-    width: 80vw;
-    display: flex;
-    justify-content: center;
-  }
-  #item-list > ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 70vw;
-    row-gap: 8px;
-  }
-  h3 {
-    font-family: "Oswald", sans-serif;
-  }
-  #item-list > ul > li {
-    font-family: "Oswald", sans-serif;
-    font-size: 18px;
-    width: 60vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 4vh;
-    border-radius: 16px 16px 16px 0px;
-    background: rgb(247, 247, 247);
-    color: black !important;
-  }
-  #modal-percentage-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    font-family: "Oswald", sans-serif;
-    font-weight: 600;
-  }
-  #modal-percentage-list > li {
-    width: 30vw;
-    height: 25px;
-    box-shadow: rgba(41, 41, 41, 0.4) 1px 1px 2px 1px;
-    text-align: center;
-    border-radius: 8px;
-    border: 0 none;
-    outline: 0;
-  }
-  .input-button {
-    display: flex;
-    width: 60vw;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    border: 0 none;
-    outline: 0;
-  }
-  .input-button > input {
-    width: 30vw;
-    border: 0 none;
-    outline: 0;
-    border-radius: 12px;
-    text-align: center;
-  }
-
-  .input-button > button {
-    width: 20vw;
-    height: 4vh;
-    box-shadow: rgba(41, 41, 41, 0.4) 1px 1px 2px 1px;
-    border-radius: 8px;
-    border: 0;
-  }
-  #btn-Lpo {
-    font-family: "Oswald", sans-serif;
-    font-size: 18px;
-    width: 40vw;
-    display: flex;
-    justify-content: center;
-    height: 4vh;
-    border-radius: 16px 16px 16px 16px;
-    background: rgb(49, 104, 52);
-    color: rgb(255, 255, 255) !important;
-    border: 0;
-  }
-  h3 {
-    margin: 10px;
-  }
+}
+#plates-list>li{
+  display: flex;
 }
